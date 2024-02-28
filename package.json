@@ -1,0 +1,32 @@
+{
+  "name": "wp-simplest-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyrorre/WPSimplestTheme.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "author": "hyrorre",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/hyrorre/WPSimplestTheme/issues"
+  },
+  "homepage": "https://github.com/hyrorre/WPSimplestTheme#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.71.1"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.22.2",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  }
+}
