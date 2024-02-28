@@ -20119,7 +20119,6 @@ img {
 .content-doc .h6 a {
   color: #212529;
   text-decoration: none;
-  pointer-events: none;
 }
 .content-doc h2, .content-doc .h2 {
   margin-top: 2rem;

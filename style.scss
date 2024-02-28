@@ -13,8 +13,8 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, portfolio
 */
 
-@import './node_modules/bootstrap/scss/bootstrap.scss';
-@import './node_modules/bootstrap-icons/font/bootstrap-icons.scss';
+@import './node_modules/bootstrap/scss/bootstrap';
+@import './node_modules/bootstrap-icons/font/bootstrap-icons';
 
 html,
 body {
@@ -41,7 +41,6 @@ img {
 }
 
 .content-doc {
-
   h1,
   h2,
   h3,
@@ -51,7 +50,7 @@ img {
     a {
       color: $body-color;
       text-decoration: none;
-      pointer-events: none;
+      // pointer-events: none;
     }
   }
 
