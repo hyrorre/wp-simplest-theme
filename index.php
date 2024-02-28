@@ -4,18 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="<?= get_template_directory_uri() . '/style.css' ?>">
   <title><?= bloginfo('name') ?></title>
   <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
   <?php get_header(); ?>
   <main>
-    <?php while (have_posts()): ?>
+    <?php while (have_posts()) : ?>
       <article class="py-4 border-bottom">
         <?php the_post(); ?>
-        <?php has_post_thumbnail() ? the_post_thumbnail('thumbnail') : null; ?>
         <a href="<?php the_permalink(); ?>" class="link-dark text-decoration-none">
           <h2>
             <?php the_title(); ?>

@@ -20106,38 +20106,42 @@ img {
     width: 330px;
   }
 }
-.content-doc h1 a, .content-doc .h1 a,
-.content-doc h2 a,
-.content-doc .h2 a,
-.content-doc h3 a,
-.content-doc .h3 a,
-.content-doc h4 a,
-.content-doc .h4 a,
-.content-doc h5 a,
-.content-doc .h5 a,
-.content-doc h6 a,
-.content-doc .h6 a {
+h1 a, .h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a,
+h6 a,
+.h6 a {
   color: #212529;
   text-decoration: none;
 }
-.content-doc h2, .content-doc .h2 {
+
+h2, .h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   padding-top: 2rem;
   border-top: 1px solid #dee2e6;
 }
-.content-doc h3, .content-doc .h3 {
+
+h3, .h3 {
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid #dee2e6;
 }
-.content-doc pre {
+
+pre {
   padding: 1rem;
   border-radius: 0.5rem;
   color: white;
   background-color: #212529;
 }
-.content-doc .post-categories {
+
+.post-categories {
   list-style: none;
 }
 
