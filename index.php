@@ -12,7 +12,7 @@
 <body>
   <?php get_header(); ?>
   <main>
-    <?php while (have_posts()) : ?>
+    <?php while (have_posts()): ?>
       <article class="py-4 border-bottom">
         <?php the_post(); ?>
         <?php has_post_thumbnail() ? the_post_thumbnail('thumbnail') : null; ?>
