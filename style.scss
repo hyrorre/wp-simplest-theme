@@ -1,0 +1,81 @@
+/*
+Theme Name: WP Simplest Theme
+Theme URI: https://hyrorre.com
+Author: hyrorre
+Author URI: https://hyrorre.com
+Description: WP Simplest Theme
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 7.0
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: blog, portfolio
+*/
+
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+@import './node_modules/bootstrap-icons/font/bootstrap-icons.scss';
+
+html,
+body {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.link-dark:hover {
+  color: $secondary !important;
+}
+
+img {
+  width: 100%;
+}
+
+.sidebar {
+  width: 100%;
+}
+
+@include media-breakpoint-up(lg) {
+  .sidebar {
+    width: 330px;
+  }
+}
+
+.content-doc {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    a {
+      color: $body-color;
+      text-decoration: none;
+      pointer-events: none;
+    }
+  }
+
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid $gray-300;
+  }
+
+  h3 {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid $gray-300;
+  }
+
+  pre {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: $gray-900;
+  }
+
+  .post-categories {
+    list-style: none;
+  }
+}
