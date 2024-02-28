@@ -14,7 +14,6 @@ Tags: blog, portfolio
 */
 
 @import './node_modules/bootstrap/scss/bootstrap';
-@import './node_modules/bootstrap-icons/font/bootstrap-icons';
 
 html,
 body {
@@ -40,39 +39,58 @@ img {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  a {
-    color: $body-color;
-    text-decoration: none;
-    // pointer-events: none;
+.post-categories {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin-right: $spacer * 0.5;
   }
 }
 
-h2 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  padding-top: 2rem;
-  border-top: 1px solid $gray-300;
+.post-tags {
+  a {
+    margin-right: $spacer * 0.5;
+  }
 }
 
-h3 {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid $gray-300;
-}
+.content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    a {
+      color: $body-color;
+      text-decoration: none;
+      // pointer-events: none;
+    }
+  }
 
-pre {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  color: white;
-  background-color: $gray-900;
-}
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid $gray-300;
+  }
 
-.post-categories {
-  list-style: none;
+  h3 {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid $gray-300;
+  }
+
+  pre {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: $gray-900;
+  }
+
+  .more-link {
+    display: none;
+  }
 }
