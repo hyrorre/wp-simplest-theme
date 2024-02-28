@@ -1,3 +1,10 @@
 {
-  "php.stubs": ["*", "wordpress"]
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.php$",
+        "cmd": "npx prettier ${file} --write"
+      }
+    ]
+  }
 }
