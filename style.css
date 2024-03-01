@@ -11895,6 +11895,11 @@ img {
   margin-right: 0.5rem;
 }
 
+.tag-cloud-link {
+  margin-right: 0.5rem;
+  font-size: var(--bs-body-font-size) !important;
+}
+
 .content h1 a, .content .h1 a,
 .content h2 a,
 .content .h2 a,

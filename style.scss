@@ -56,6 +56,11 @@ img {
   }
 }
 
+.tag-cloud-link {
+  margin-right: $spacer * 0.5;
+  font-size: var(--bs-body-font-size) !important;
+}
+
 .content {
   h1,
   h2,
