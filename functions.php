@@ -21,3 +21,10 @@ add_filter('intermediate_image_sizes_advanced', function ($sizes) {
 });
 add_filter('big_image_size_threshold', '__return_false');
 update_option('medium_large_size_w', 0);
+
+add_action('after_setup_theme', function () {
+    register_nav_menus([
+        'main-menu' => 'Main Menu',
+        'footer-menu'  => 'Footer Menu',
+    ]);
+});
