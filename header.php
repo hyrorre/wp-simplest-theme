@@ -1,15 +1,15 @@
 <header class="navbar navbar-dark bg-dark">
   <div class="container">
-    <nuxt-link class="navbar-brand" to="/">HY Techs</nuxt-link>
+    <a class="navbar-brand" href="/"><?= bloginfo('name') ?></a>
     <ul class="navbar-nav flex-row gap-4">
       <li class="nav-item">
-        <nuxt-link class="nav-link" to="/profile">Profile</nuxt-link>
+        <a class="nav-link" href="/profile">Profile</a>
       </li>
       <li class="nav-item">
-        <nuxt-link class="nav-link" to="/products">Products</nuxt-link>
+        <a class="nav-link" href="/products">Products</a>
       </li>
       <li class="nav-item">
-        <nuxt-link class="nav-link" to="/contact">Contact</nuxt-link>
+        <a class="nav-link" href="/contact">Contact</a>
       </li>
     </ul>
   </div>
