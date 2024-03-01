@@ -134,3 +134,8 @@ dist
 
 # vscode
 .vscode/
+
+# build file
+*.js
+*.css
+*.css.map
