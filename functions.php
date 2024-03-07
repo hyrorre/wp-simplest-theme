@@ -28,3 +28,8 @@ add_action('after_setup_theme', function () {
         'footer-menu'  => 'Footer Menu',
     ]);
 });
+
+add_filter('the_content_more_link', function () {
+    $url = esc_url(get_permalink());
+    return "<div><a href='$url' class='more-link btn btn-secondary'>続きを読む</a></div>";
+});
