@@ -28,7 +28,7 @@
                 <i class="bi bi-folder me-2"></i>
                 <?php the_category(); ?>
               </div>
-              <div class="post-tags me-2">
+              <div class="post-tags d-flex flex-wrap">
                 <i class="bi bi-tags me-2"></i>
                 <?php the_tags('', ''); ?>
               </div>
