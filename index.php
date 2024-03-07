@@ -18,23 +18,25 @@
           <a href="<?php the_permalink(); ?>" class="link-dark text-decoration-none">
             <h2><?php the_title(); ?></h2>
           </a>
-          <div class="px-1 text-secondary">
-            <div class="me-2">
-              <i class="bi bi-calendar me-2"></i>
-              <?php the_time('Y-m-d'); ?>
-            </div>
-            <div class="d-flex flex-wrap">
-              <div class="d-flex me-2">
-                <i class="bi bi-folder me-2"></i>
-                <?php the_category(); ?>
+          <?php if (!is_page()) : ?>
+            <div class="px-1 text-secondary">
+              <div class="me-2">
+                <i class="bi bi-calendar me-2"></i>
+                <?php the_time('Y-m-d'); ?>
               </div>
-              <div class="post-tags d-flex flex-wrap">
-                <i class="bi bi-tags me-2"></i>
-                <?php the_tags('', ''); ?>
+              <div class="d-flex flex-wrap">
+                <div class="d-flex me-2">
+                  <i class="bi bi-folder me-2"></i>
+                  <?php the_category(); ?>
+                </div>
+                <div class="post-tags d-flex flex-wrap">
+                  <i class="bi bi-tags me-2"></i>
+                  <?php the_tags('', ''); ?>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="content">
+          <?php endif; ?>
+          <div class="content pt-4">
             <?php the_content(); ?>
           </div>
         </article>
