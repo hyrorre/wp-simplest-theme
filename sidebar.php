@@ -14,9 +14,9 @@
   </div>
   <h4><i class="bi bi-folder me-2"></i>カテゴリ</h4>
   <ul class="ps-0">
-    <?php foreach (get_categories('get=all') as $category) : ?>
+    <?php foreach (get_categories() as $category) : ?>
       <li class="list-unstyled">
-        <a href="<?php echo get_category_link($category->term_id); ?>"><?php echo $category->name; ?></a>
+        <a href="<?= get_category_link($category->term_id); ?>"><?= $category->name; ?></a>
       </li>
     <?php endforeach; ?>
   </ul>
