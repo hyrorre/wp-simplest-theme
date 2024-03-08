@@ -24,8 +24,7 @@ update_option('medium_large_size_w', 0);
 
 add_action('after_setup_theme', function () {
     register_nav_menus([
-        'main-menu' => 'Main Menu',
-        'footer-menu'  => 'Footer Menu',
+        'Menu' => 'Menu'
     ]);
 });
 
