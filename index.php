@@ -15,9 +15,13 @@
       <?php while (have_posts()) : ?>
         <article class="py-4 border-bottom">
           <?php the_post(); ?>
+          <?php if (is_single() || is_page()) : ?>
+            <h1><?php the_title(); ?></h1>
+          <?php else : ?>
           <a href="<?php the_permalink(); ?>" class="link-dark text-decoration-none">
             <h2><?php the_title(); ?></h2>
           </a>
+          <?php endif; ?>
           <?php if (!is_page()) : ?>
             <div class="px-1 text-secondary">
               <div class="me-2">
