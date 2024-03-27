@@ -51,3 +51,7 @@ add_filter('comment_reply_link', function ($html) {
 add_filter('wp_required_field_indicator', function () {
     return '<span class="required">*</span>';
 });
+
+add_filter('document_title_separator', function () {
+    return '|';
+});

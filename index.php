@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php is_home() || is_front_page() ? '' : the_title('', ' | ') ?><?php bloginfo('name') ?></title>
+  <title><?= wp_get_document_title() ?></title>
   <?php wp_head(); ?>
 </head>
 
