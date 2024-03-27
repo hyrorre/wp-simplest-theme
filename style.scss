@@ -19,10 +19,6 @@ Tags: blog, portfolio
   color: $secondary !important;
 }
 
-img {
-  width: 100%;
-}
-
 .sidebar {
   width: 100%;
 }
@@ -87,5 +83,24 @@ img {
     border-radius: 0.5rem;
     color: white;
     background-color: $gray-900;
+    // TODO: update background-color
+  }
+}
+
+.comment-list {
+  .says {
+    display: none;
+  }
+
+  .comment-text {
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    border-left: var(--bs-dark-border-subtle) 5px solid;
+    padding-left: 0.5rem;
   }
 }

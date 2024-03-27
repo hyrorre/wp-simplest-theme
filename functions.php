@@ -32,3 +32,22 @@ add_filter('the_content_more_link', function () {
     $url = esc_url(get_permalink());
     return "<div><a href='$url' class='more-link btn btn-secondary'>続きを読む</a></div>";
 });
+
+add_filter('comment_form_fields', function ($fields) {
+    return [
+        'author'  => $fields['author'],
+        'email'   => $fields['email'],
+        // 'url'     => $fields['url'],
+        // 'rate'    => $fields['rate'],
+        'comment' => $fields['comment'],
+        'cookies' => $fields['cookies']
+    ];
+});
+
+add_filter('comment_reply_link', function ($html) {
+    return str_replace('comment-reply-link', 'comment-reply-link btn btn-outline-secondary btn-sm mb-2', $html);
+});
+
+add_filter('wp_required_field_indicator', function () {
+    return '<span class="required">*</span>';
+});

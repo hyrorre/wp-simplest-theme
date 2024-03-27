@@ -18,9 +18,9 @@
           <?php if (is_single() || is_page()) : ?>
             <h1><?php the_title(); ?></h1>
           <?php else : ?>
-          <a href="<?php the_permalink(); ?>" class="link-dark text-decoration-none">
-            <h2><?php the_title(); ?></h2>
-          </a>
+            <a href="<?php the_permalink(); ?>" class="link-dark text-decoration-none">
+              <h2><?php the_title(); ?></h2>
+            </a>
           <?php endif; ?>
           <?php if (!is_page()) : ?>
             <div class="px-1 text-secondary">
@@ -45,6 +45,10 @@
           </div>
         </article>
       <?php endwhile; ?>
+      <div class="mt-4">
+        <!-- TODO: add paging -->
+      </div>
+      <?php comments_template(); ?>
     </main>
     <?php get_sidebar(); ?>
   </div>
