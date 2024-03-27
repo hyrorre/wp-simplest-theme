@@ -18,6 +18,8 @@ add_action('wp_enqueue_scripts', function () {
   if (!is_page('contact')) {
     wp_dequeue_style('contact-form-7');
     wp_dequeue_script('contact-form-7');
+    wp_deregister_script('google-recaptcha');
+    wp_deregister_script('google-invisible-recaptcha');
   }
 });
 
