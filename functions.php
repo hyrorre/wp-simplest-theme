@@ -14,6 +14,11 @@ add_action('wp_enqueue_scripts', function () {
         date('ymdHis', filemtime(get_theme_file_path('/style.css')))
     );
     wp_enqueue_script('wp-simplest-index-js', get_theme_file_uri('/index.js'), [], false, true);
+
+    if (!is_page('contact')) {
+        wp_dequeue_style('contact-form-7');
+        wp_dequeue_script('contact-form-7');
+    }
 });
 
 add_filter('intermediate_image_sizes_advanced', function ($sizes) {
