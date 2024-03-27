@@ -24,12 +24,18 @@
           <?php endif; ?>
           <?php if (!is_page()) : ?>
             <div class="px-1 text-secondary">
-              <div class="me-2">
-                <i class="bi bi-calendar me-2"></i>
-                <?php the_time('Y-m-d'); ?>
+              <div class="d-flex flex-wrap">
+                <div class="me-4">
+                  <i class="bi bi-calendar me-2"></i>
+                  <?php the_time('Y-m-d'); ?>
+                </div>
+                <div class="me-2">
+                  <i class="bi bi-chat me-2"></i>
+                  <?= get_comment_count(get_the_ID())['approved']; ?>
+                </div>
               </div>
               <div class="d-flex flex-wrap">
-                <div class="d-flex me-2">
+                <div class="d-flex me-3">
                   <i class="bi bi-folder me-2"></i>
                   <?php the_category(); ?>
                 </div>
