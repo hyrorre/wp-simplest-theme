@@ -24,10 +24,5 @@
   <ul class="d-flex flex-wrap list-unstyled">
     <?php wp_tag_cloud(); ?>
   </ul>
-  <h4><i class="bi bi-person me-2"></i>プロフィール</h4>
-  <p>
-    <img src="/wp-content/uploads/profile.jpg" alt="Profile Image" style="width: 150px" class="m-2" />
-  </p>
-  <p>hyrorre - すたろあ</p>
-  <p>音ゲーマー 兼 Webエンジニア</p>
+  <?php dynamic_sidebar( 'profile' ); ?>
 </aside>

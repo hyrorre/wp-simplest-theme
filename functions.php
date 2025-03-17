@@ -62,3 +62,16 @@ add_filter('wp_required_field_indicator', function () {
 add_filter('document_title_separator', function () {
   return '|';
 });
+
+// ウィジェットエリアの登録
+add_action( 'widgets_init', function(){
+  register_sidebar( array(
+    'name' => 'profile',
+    'id' => 'profile',
+    'description' => 'profile widget',
+    'before_widget' => '',
+    'after_widget' => '',
+    'before_title' => '',
+    'after_title' => '',
+  ) );
+} );
